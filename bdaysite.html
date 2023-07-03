@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zoe's Birthday Blast!</title>
+    <style>
+        body {
+            background-color: #000000;
+            background-image: url('http://www.geocities.ws/sachith/Graphics/Backgrounds/spacebg.gif');
+            font-family: 'Courier New', Courier, monospace;
+            color: #00FF00;
+            text-align: center;
+            width: 100vw;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px #FF00FF;
+            animation: neon 1s ease-in-out infinite alternate;
+            margin-bottom: 5rem;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .spacer {
+            margin: 20px;
+        }
+        .img-container {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            height: 400px;
+        }
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF, 0 0 40px #FF00FF;
+            }
+            to {
+                text-shadow: 0 0 20px #FF00FF, 0 0 30px #FF00FF, 0 0 40px #FF00FF, 0 0 50px #FF00FF, 0 0 60px #FF00FF;
+            }
+        }
+        #ufo {
+            width: 300px;
+            animation: float 2s ease-in-out infinite alternate;
+            top: 0;
+            position: absolute;
+            left: 50%;
+            z-index: 10;
+        }
+        #zoe {
+            bottom: 50px;
+            width: 200px;
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            z-index: 1;
+        }
+        @keyframes float {
+            from {
+                transform: translate(-50%, 0px);
+            }
+            to {
+                transform: translate(-50%, -20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Zoe's Galactic Birthday Blast!</h1>
+    <div class="spacer"></div>
+    <div class="img-container">
+        <img id="ufo" src="ufo-g837a9d522_1280.png" alt="UFO">
+        <img id="zoe" src="zoe.png" alt="Zoe">
+    </div>
+    <p style="background:black; padding-top: 0; margin:0; margin-bottom:5rem;">
+        Hope the next year lets you beam up a couple more of them spritzies!<br>
+        Love you to Saturn and back &#10084;&#65039;&#129680;&#10084;&#65039;&#129680;<br>
+        Love, Sam
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/USdpFHtYQIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
